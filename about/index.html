@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+ <html lang="en"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta name="viewport" content="user-scalable=no width=device-width, initial-scale=1.0 maximum-scale=1.0"/><meta data-react-helmet="true" property="og:url" content="novvum.github.io"/><meta data-react-helmet="true" property="og:type" content="blog"/><meta data-react-helmet="true" property="og:title" content="novvum"/><meta data-react-helmet="true" property="og:site_name" content="novvum"/><meta data-react-helmet="true" property="og:image" content="novvum.github.iopam-brewing.jpg"/><meta data-react-helmet="true" property="fb:admins" content=""/><meta data-react-helmet="true" name="twitter:title" content="novvum"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:site" content=""/><meta data-react-helmet="true" name="twitter:creator" content=""/><meta data-react-helmet="true" name="twitter:description" content=" novvum"/><meta data-react-helmet="true" name="twitter:image" content="novvum.github.iopam-brewing.jpg"/><title data-react-helmet="true">novvum</title><link rel="shortcut icon"/><style id="typography.js">/*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  line-height: 1.625em;
+  overflow-y: scroll;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: hsl(0,0%,20%);
+  font-family: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+/* Make image responsive by default */
+img {
+  max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,hgroup,ul,ol,dl,dd,p,figure,pre,table,fieldset,blockquote,form,noscript,iframe,img,hr {
+margin: 0;
+margin-bottom: 1.625rem;
+padding: 0;
+}
+
+blockquote {
+margin: 1.625rem 4.0625rem;
+}
+
+b,strong {
+font-weight: 700
+}
+
+hr {
+background: hsl(0,0%,80%);
+border: none;
+height: 1px;
+margin-bottom: calc(1.625rem - 1px);
+}
+
+ol,ul {
+list-style-position: outside;
+margin-left: 1.625rem;
+}
+
+ul li,ol li {
+padding-left: 0;
+}
+
+code,kbd,pre,samp {
+font-size: 0.85rem;
+line-height: 1.625rem;
+}
+
+table {
+font-size: 1rem;
+line-height: 2.4375rem;
+width: 100%;
+}
+
+thead {
+text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+color: hsl(0,0%,20%);
+font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight: 700;
+}
+
+h1 {
+font-size: 2.82843rem;
+line-height: 3.25rem;
+}
+
+h2 {
+font-size: 2rem;
+line-height: 2.4375rem;
+}
+
+h3 {
+font-size: 1.41421rem;
+line-height: 2.4375rem;
+}
+
+h4 {
+font-size: 1.25992rem;
+line-height: 1.625rem;
+}
+
+h5 {
+font-size: 1.12246rem;
+line-height: 1.625rem;
+}
+
+h6 {
+font-size: 1rem;
+line-height: 1.625rem;
+}
+
+@media only screen and (max-width: 768px) {
+h1 {
+font-size: 1.728rem;
+line-height: 2.4375rem;
+}
+
+h2 {
+font-size: 1.44rem;
+line-height: 2.4375rem;
+}
+
+h3 {
+font-size: 1.2rem;
+line-height: 1.625rem;
+}
+
+h4 {
+font-size: 1.12924rem;
+line-height: 1.625rem;
+}
+
+h5 {
+font-size: 1.06266rem;
+line-height: 1.625rem;
+}
+
+h6 {
+font-size: 1rem;
+line-height: 1.625rem;
+}
+
+}
+</style><link rel="stylesheet" href="/styles.css"/></head><body><div id="react-mount"><div data-reactroot="" data-reactid="1" data-react-checksum="-1298287402"><!-- react-empty: 2 --><h3 style="max-width:39rem;padding:0.8125rem;margin:0px;" data-reactid="3"><a style="text-decoration:none;color:inherit;" href="/" data-reactid="4">novvum</a></h3><div class="landing" data-reactid="5"><div class="container" data-reactid="6"><section class="background landing-who" data-reactid="7"><div class="content-wrapper" data-reactid="8"><div class="card" data-reactid="9"><p class="content-title" data-reactid="10">Who</p><p class="content-subtitle" data-reactid="11">Novvum was started by two childhood friends who had to move away from each other. One went to Arizona while the other stayed in California. A number of years later, after they graduated from college and worked for a few years, they reunited to pursue their dream of world domination.</p><br data-reactid="12"/><p class="content-subtitle" data-reactid="13">Now, we are a small team of engineers, designers and developers who love to have fun. We have the most fun when we work with other businesses and startups to create solutions that add real value to the world.</p><br data-reactid="14"/><p class="content-subtitle" data-reactid="15">We will continue to grow and improve to finally realize our dream of taking over the world!</p></div></div><div class="navbar" data-reactid="16"><div class="navbar-left" data-reactid="17"><ul data-reactid="18"><li data-reactid="19"><a href="#" data-reactid="20">What We Do</a></li><li class="contrast" data-reactid="21"><a href="#" data-reactid="22">Our Process</a></li></ul></div><div class="navbar-center" data-reactid="23"><img src="static/diamond.png" alt="Novvum Logo" style="max-width:80px;max-height:80px;" class="logo" data-reactid="24"/></div><div class="navbar-right" data-reactid="25"><ul data-reactid="26"><li data-reactid="27"><a href="about/" data-reactid="28">About Us</a></li><li class="contrast" data-reactid="29"><a href="#" data-reactid="30">Contact</a></li></ul></div></div></section></div></div><script data-reactid="31"></script></div></div><script src="/bundle.js"></script></body></html>
